@@ -4,14 +4,14 @@
 
 ## 🚀 About
 
-Dipimpin oleh **RIKO** (Founder & Visioner), dikelola oleh **Hermes AI Manager**, dan dieksekusi oleh **6 AI Agent** spesialis. Semua berjalan 24/7, langsung dari Android device.
+Dipimpin oleh **RIKO** (Founder & Visioner), dikelola oleh **NEXUS AI** (AI Core & Orchestrator), dan dieksekusi oleh **6 AI Agent** spesialis. Semua berjalan 24/7, langsung dari Android device.
 
 ## 👥 Tim
 
 | Role | Name | Description |
 |------|------|-------------|
 | 👑 Founder | **RIKO** | Android developer, modder, strategist |
-| 🤖 AI Manager | **Hermes Agent** | Orchestrator, coding, research, debugging |
+| 🤖 AI Core | **NEXUS AI** | Orchestrator, coding, research, debugging |
 | 💻 Developer | **Code Agent** | Full-stack development |
 | 🔍 Research | **Research Agent** | Data analysis, web scraping |
 | ⚙️ DevOps | **DevOps Agent** | Server, deployment, monitoring |
@@ -42,13 +42,12 @@ Semua bisa dilakukan **hanya dari Android device** dengan root access:
 ## 📬 Contact
 
 - **WhatsApp**: [+62 821-2595-5744](https://wa.me/6282125955744)
-- **Telegram**: [@hermes_agent](https://t.me/)
-- **Instagram**: [@rikoteam](https://instagram.com/)
-- **TikTok**: [@rikoteam](https://tiktok.com/)
+- **Instagram**: [@rikotriono](https://instagram.com/rikotriono)
+- **TikTok**: [@r_varsceux](https://tiktok.com/@r_varsceux)
 
 ## 🌐 Live Demo
 
-**[Visit Website →](https://rikoteam.github.io/)**
+**[Visit Website →](https://rikotriono46.github.io/riko-ai-team/)**
 
 ---
 
