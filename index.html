@@ -1,681 +1,501 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIKO AI Team - We Build The Future With AI</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <!-- PARTICLES -->
-    <canvas id="particles"></canvas>
-
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <div class="logo-glow"></div>
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">RIKO<span class="accent">AI</span></span>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#team" class="nav-link">Tim</a>
-                <a href="#services" class="nav-link">Layanan</a>
-                <a href="#android" class="nav-link">Android AI</a>
-                <a href="#contact" class="nav-link">Kontak</a>
-            </div>
-            <button class="nav-toggle" id="navToggle">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-glow-1"></div>
-        <div class="hero-glow-2"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                AI-Powered Development Team
-            </div>
-            <h1 class="hero-title">
-                Kami Membangun<br>
-                <span class="gradient-text">Apapun Yang<br>Kamu Butuhkan</span>
-            </h1>
-            <p class="hero-subtitle">
-                Dipimpin oleh <strong>RIKO</strong>, dikelola oleh <strong>NEXUS AI</strong>, 
-                dan dieksekusi oleh <strong>6 AI Agent</strong> spesialis. Semua berjalan 24/7, 
-                langsung dari Android device.
-            </p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i> Lihat Layanan
-                </a>
-                <a href="#contact" class="btn btn-ghost">
-                    <i class="fas fa-paper-plane"></i> Hubungi Kami
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="150" data-suffix="+">0</div>
-                    <div class="stat-label">Project Selesai</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="6" data-suffix="">0</div>
-                    <div class="stat-label">AI Agent Aktif</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="99" data-suffix="%">0</div>
-                    <div class="stat-label">Uptime</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="50" data-suffix="+">0</div>
-                    <div class="stat-label">Skills Dikuasai</div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="orbit-system">
-                <div class="orbit orbit-1"><div class="orbit-dot">💻</div></div>
-                <div class="orbit orbit-2"><div class="orbit-dot">🔍</div></div>
-                <div class="orbit orbit-3"><div class="orbit-dot">⚙️</div></div>
-                <div class="orbit orbit-4"><div class="orbit-dot">🎨</div></div>
-                <div class="orbit orbit-5"><div class="orbit-dot">📱</div></div>
-                <div class="orbit orbit-6"><div class="orbit-dot">🛡️</div></div>
-                <div class="orbit-center">🤖</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM -->
-    <section class="section" id="team">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-users"></i> Meet The Team</span>
-                <h2 class="section-title">Struktur <span class="gradient-text">Tim Kami</span></h2>
-                <p class="section-desc">Satu bos, satu AI manager, dan enam AI agent spesialis yang bekerja 24/7</p>
-            </div>
-
-            <!-- BOSS CARD -->
-            <div class="boss-section">
-                <div class="boss-card glass-card">
-                    <div class="boss-crown">👑</div>
-                    <div class="boss-info">
-                        <h2 class="boss-name">RIKO</h2>
-                        <span class="boss-role">Founder & Visioner</span>
-                        <p class="boss-desc">Otak di balik semua operasi. Android developer, modder, dan strategist yang punya visi dan mengarahkan seluruh tim AI untuk eksekusi nyata.</p>
-                        <div class="boss-skills">
-                            <span class="tag">Android Dev</span>
-                            <span class="tag">Game Modding</span>
-                            <span class="tag">Reverse Engineering</span>
-                            <span class="tag">System Architecture</span>
-                            <span class="tag">Strategy</span>
-                        </div>
-                        <div class="boss-socials">
-                            <a href="https://instagram.com/rikotriono" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://wa.me/6282125955744" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
-                            <a href="https://t.me/" target="_blank" class="social-btn telegram"><i class="fab fa-telegram-plane"></i></a>
-                            <a href="https://tiktok.com/@r_varsceux" target="_blank" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tree-connector">
-                <div class="tree-line"></div>
-                <span class="tree-label">manages & directs</span>
-            </div>
-
-            <!-- MANAGER CARD -->
-            <div class="manager-section">
-                <div class="manager-card glass-card">
-                    <div class="manager-avatar">🤖</div>
-                    <div class="manager-info">
-                        <h3 class="manager-name">NEXUS AI</h3>
-                        <span class="manager-role">AI Core & Orchestrator</span>
-                        <p class="manager-desc">AI core engine yang mengkoordinasi semua agent. Otak operasional 24/7 nonstop.</p>
-                        <div class="caps-grid">
-                            <div class="cap-pill"><i class="fas fa-sitemap"></i> Orchestrasi multi-agent</div>
-                            <div class="cap-pill"><i class="fas fa-code"></i> Full-stack development</div>
-                            <div class="cap-pill"><i class="fas fa-bug"></i> Debugging & problem solving</div>
-                            <div class="cap-pill"><i class="fas fa-search"></i> Research & analisis</div>
-                            <div class="cap-pill"><i class="fas fa-robot"></i> Automasi workflow</div>
-                            <div class="cap-pill"><i class="fas fa-database"></i> File & system management</div>
-                            <div class="cap-pill"><i class="fas fa-globe"></i> Web scraping & data</div>
-                            <div class="cap-pill"><i class="fas fa-plug"></i> API development</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tree-connector">
-                <div class="tree-line"></div>
-                <span class="tree-label">delegates to 6 specialist agents</span>
-            </div>
-
-            <!-- AGENTS GRID -->
-            <div class="agents-grid">
-                
-                <div class="agent-card glass-card">
-                    <div class="agent-icon">💻</div>
-                    <h3 class="agent-name">Code Agent</h3>
-                    <span class="agent-role">Software Developer</span>
-                    <p class="agent-desc">Spesialis coding. Bisa buat app, website, API, bot dari nol.</p>
-                    <div class="agent-tags">
-                        
-                        <span class="tag-sm">Python</span>
-                        
-                        <span class="tag-sm">JavaScript</span>
-                        
-                        <span class="tag-sm">Flask</span>
-                        
-                        <span class="tag-sm">React</span>
-                        
-                        <span class="tag-sm">Android</span>
-                        
-                        <span class="tag-sm">REST API</span>
-                        
-                    </div>
-                </div>
-                
-                <div class="agent-card glass-card">
-                    <div class="agent-icon">🔍</div>
-                    <h3 class="agent-name">Research Agent</h3>
-                    <span class="agent-role">Data &amp; Research Specialist</span>
-                    <p class="agent-desc">Ahli riset dan analisis data. Scrape web, analisis market, buat report.</p>
-                    <div class="agent-tags">
-                        
-                        <span class="tag-sm">Web Scraping</span>
-                        
-                        <span class="tag-sm">Data Analysis</span>
-                        
-                        <span class="tag-sm">Market Research</span>
-                        
-                        <span class="tag-sm">Report Generation</span>
-                        
-                    </div>
-                </div>
-                
-                <div class="agent-card glass-card">
-                    <div class="agent-icon">⚙️</div>
-                    <h3 class="agent-name">DevOps Agent</h3>
-                    <span class="agent-role">Infrastructure &amp; Automation</span>
-                    <p class="agent-desc">Handle server, deployment, monitoring, automasi 24/7 nonstop.</p>
-                    <div class="agent-tags">
-                        
-                        <span class="tag-sm">Server Management</span>
-                        
-                        <span class="tag-sm">Docker</span>
-                        
-                        <span class="tag-sm">CI/CD</span>
-                        
-                        <span class="tag-sm">Monitoring</span>
-                        
-                        <span class="tag-sm">Cron Jobs</span>
-                        
-                    </div>
-                </div>
-                
-                <div class="agent-card glass-card">
-                    <div class="agent-icon">🎨</div>
-                    <h3 class="agent-name">Creative Agent</h3>
-                    <span class="agent-role">Content &amp; Design</span>
-                    <p class="agent-desc">Bikin konten kreatif, design, video, audio, copywriting.</p>
-                    <div class="agent-tags">
-                        
-                        <span class="tag-sm">Image Generation</span>
-                        
-                        <span class="tag-sm">Video Editing</span>
-                        
-                        <span class="tag-sm">Content Writing</span>
-                        
-                        <span class="tag-sm">UI/UX Design</span>
-                        
-                    </div>
-                </div>
-                
-                <div class="agent-card glass-card">
-                    <div class="agent-icon">📱</div>
-                    <h3 class="agent-name">Android Agent</h3>
-                    <span class="agent-role">Mobile &amp; Reverse Engineering</span>
-                    <p class="agent-desc">Spesialis Android - development sampai reverse engineering expert.</p>
-                    <div class="agent-tags">
-                        
-                        <span class="tag-sm">APK Analysis</span>
-                        
-                        <span class="tag-sm">Reverse Engineering</span>
-                        
-                        <span class="tag-sm">Game Modding</span>
-                        
-                        <span class="tag-sm">Frida</span>
-                        
-                        <span class="tag-sm">Root Tools</span>
-                        
-                    </div>
-                </div>
-                
-                <div class="agent-card glass-card">
-                    <div class="agent-icon">🛡️</div>
-                    <h3 class="agent-name">Security Agent</h3>
-                    <span class="agent-role">Security &amp; Penetration Testing</span>
-                    <p class="agent-desc">Handle security scanning, vulnerability assessment, hardening.</p>
-                    <div class="agent-tags">
-                        
-                        <span class="tag-sm">Security Audit</span>
-                        
-                        <span class="tag-sm">Vulnerability Scan</span>
-                        
-                        <span class="tag-sm">Penetration Testing</span>
-                        
-                        <span class="tag-sm">Hardening</span>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section section-alt" id="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-bolt"></i> Our Services</span>
-                <h2 class="section-title">Apa Yang <span class="gradient-text">Bisa Kami Buat</span></h2>
-                <p class="section-desc">Dengan kekuatan AI agent, hampir tidak ada yang tidak bisa kami lakukan</p>
-            </div>
-            <div class="services-grid">
-                
-                <div class="service-card glass-card">
-                    <div class="svc-icon">🌐</div>
-                    <h3 class="svc-title">Web Development</h3>
-                    <p class="svc-desc">Full-stack website dari landing page sampai web app kompleks.</p>
-                    <ul class="svc-features">
-                        
-                        <li><i class="fas fa-check"></i> Landing Page</li>
-                        
-                        <li><i class="fas fa-check"></i> E-Commerce</li>
-                        
-                        <li><i class="fas fa-check"></i> Dashboard</li>
-                        
-                        <li><i class="fas fa-check"></i> API Backend</li>
-                        
-                        <li><i class="fas fa-check"></i> Real-time App</li>
-                        
-                    </ul>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="svc-icon">📱</div>
-                    <h3 class="svc-title">Android Development</h3>
-                    <p class="svc-desc">Build, mod, dan analyze aplikasi Android dari nol.</p>
-                    <ul class="svc-features">
-                        
-                        <li><i class="fas fa-check"></i> App Development</li>
-                        
-                        <li><i class="fas fa-check"></i> APK Modding</li>
-                        
-                        <li><i class="fas fa-check"></i> Reverse Engineering</li>
-                        
-                        <li><i class="fas fa-check"></i> Game Mod Menu</li>
-                        
-                        <li><i class="fas fa-check"></i> Root Tools</li>
-                        
-                    </ul>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="svc-icon">🤖</div>
-                    <h3 class="svc-title">Automation &amp; Bots</h3>
-                    <p class="svc-desc">Bot Telegram, Discord, WhatsApp, scheduler, scraper otomatis.</p>
-                    <ul class="svc-features">
-                        
-                        <li><i class="fas fa-check"></i> Telegram Bot</li>
-                        
-                        <li><i class="fas fa-check"></i> Discord Bot</li>
-                        
-                        <li><i class="fas fa-check"></i> Web Scraper</li>
-                        
-                        <li><i class="fas fa-check"></i> Task Scheduler</li>
-                        
-                        <li><i class="fas fa-check"></i> Workflow Auto</li>
-                        
-                    </ul>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="svc-icon">🧠</div>
-                    <h3 class="svc-title">AI Solutions</h3>
-                    <p class="svc-desc">Chatbot, AI-powered analytics, content generation dengan AI.</p>
-                    <ul class="svc-features">
-                        
-                        <li><i class="fas fa-check"></i> AI Chatbot</li>
-                        
-                        <li><i class="fas fa-check"></i> Content Generation</li>
-                        
-                        <li><i class="fas fa-check"></i> Data Analytics</li>
-                        
-                        <li><i class="fas fa-check"></i> Image Generation</li>
-                        
-                        <li><i class="fas fa-check"></i> Text Analysis</li>
-                        
-                    </ul>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="svc-icon">🔒</div>
-                    <h3 class="svc-title">Security &amp; Testing</h3>
-                    <p class="svc-desc">Keamanan aplikasi dan infrastruktur, scanning dan hardening.</p>
-                    <ul class="svc-features">
-                        
-                        <li><i class="fas fa-check"></i> Security Audit</li>
-                        
-                        <li><i class="fas fa-check"></i> Penetration Testing</li>
-                        
-                        <li><i class="fas fa-check"></i> Vulnerability Scan</li>
-                        
-                        <li><i class="fas fa-check"></i> Hardening</li>
-                        
-                        <li><i class="fas fa-check"></i> Monitoring</li>
-                        
-                    </ul>
-                </div>
-                
-                <div class="service-card glass-card">
-                    <div class="svc-icon">☁️</div>
-                    <h3 class="svc-title">DevOps &amp; Infrastructure</h3>
-                    <p class="svc-desc">Setup server, deployment, monitoring, infra cloud 24/7.</p>
-                    <ul class="svc-features">
-                        
-                        <li><i class="fas fa-check"></i> Server Setup</li>
-                        
-                        <li><i class="fas fa-check"></i> Docker Deployment</li>
-                        
-                        <li><i class="fas fa-check"></i> CI/CD Pipeline</li>
-                        
-                        <li><i class="fas fa-check"></i> Monitoring</li>
-                        
-                        <li><i class="fas fa-check"></i> Auto-scaling</li>
-                        
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- ANDROID AI -->
-    <section class="section" id="android">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fab fa-android"></i> Android + AI</span>
-                <h2 class="section-title">Semua Bisa Dilakukan<br><span class="gradient-text">Hanya Dari Android</span></h2>
-                <p class="section-desc">Tidak perlu PC atau server mahal. Semua operasi AI agent berjalan langsung di Android device dengan root access</p>
-            </div>
-
-            <div class="android-layout">
-                <div class="phone-mockup">
-                    <div class="phone-body">
-                        <div class="phone-notch"></div>
-                        <div class="phone-screen">
-                            <div class="ph-bar">
-                                <span>24/7</span>
-                                <span class="ph-status"><span class="live-dot"></span> AI Active</span>
-                            </div>
-                            <div class="ph-terminal">
-                                <div class="ph-line"><span class="ph-prompt">$</span> <span class="ph-cmd">hermes "build web app"</span></div>
-                                <div class="ph-line"><span class="ph-prompt">$</span> <span class="ph-cmd">agent --delegate all</span></div>
-                                <div class="ph-out"><i class="fas fa-check-circle"></i> Deployed to production!</div>
-                                <div class="ph-line"><span class="ph-prompt">$</span> <span class="ph-cursor">_</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="caps-layout">
-                    
-                    <div class="cap-card glass-card">
-                        <h4 class="cap-title">📱 App Development</h4>
-                        <ul class="cap-list">
-                            
-                            <li><i class="fas fa-angle-right"></i> Build Android app dari nol (Java/Kotlin/Flutter)</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Buat mod menu untuk game Android</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Develop tool/utility app</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Create automation apps</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Build system-level apps dengan root access</li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="cap-card glass-card">
-                        <h4 class="cap-title">🔧 Reverse Engineering</h4>
-                        <ul class="cap-list">
-                            
-                            <li><i class="fas fa-angle-right"></i> Analisis APK (decompile, inspect, patch)</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Bypass protections (IJM, Pairip, Fancy Security)</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Extract dan modifikasi libil2cpp.so</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Runtime analysis dengan Frida</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> String decryption dan memory dumping</li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="cap-card glass-card">
-                        <h4 class="cap-title">🎮 Game Modding</h4>
-                        <ul class="cap-list">
-                            
-                            <li><i class="fas fa-angle-right"></i> External ESP overlay (MLBB, PUBG, dll)</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Memory read/write untuk game values</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Offset finding dan updating</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Build injector dan mod menu APK</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Anti-cheat bypass research</li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="cap-card glass-card">
-                        <h4 class="cap-title">⚙️ Root Automation</h4>
-                        <ul class="cap-list">
-                            
-                            <li><i class="fas fa-angle-right"></i> KernelSU module development</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Automated root command execution</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> System-level file management</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Boot script dan service automation</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Device monitoring dan security scanning</li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="cap-card glass-card">
-                        <h4 class="cap-title">📊 Analysis &amp; Research</h4>
-                        <ul class="cap-list">
-                            
-                            <li><i class="fas fa-angle-right"></i> APK static analysis (jadx, apktool)</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Dynamic analysis (Frida, logcat)</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Network traffic analysis</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Database extraction dan analysis</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Certificate dan signature analysis</li>
-                            
-                        </ul>
-                    </div>
-                    
-                    <div class="cap-card glass-card">
-                        <h4 class="cap-title">🛠️ Tool Development</h4>
-                        <ul class="cap-list">
-                            
-                            <li><i class="fas fa-angle-right"></i> CLI tools untuk Android</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Python scripts untuk automation</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Bash scripts untuk root operations</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Bridge IPC untuk PRoot-root communication</li>
-                            
-                            <li><i class="fas fa-angle-right"></i> Custom system utilities</li>
-                            
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <!-- HOW IT WORKS -->
-            <div class="steps-section">
-                <h3 class="sub-title">Bagaimana Ini Bekerja?</h3>
-                <div class="steps-grid">
-                    <div class="step glass-card">
-                        <div class="step-num">01</div>
-                        <div class="step-icon">📱</div>
-                        <h4>Android + Root</h4>
-                        <p>Device Android dengan KernelSU root access. Semua berjalan di smartphone biasa.</p>
-                    </div>
-                    <div class="step glass-card">
-                        <div class="step-num">02</div>
-                        <div class="step-icon">🤖</div>
-                        <h4>AI Agent System</h4>
-                        <p>NEXUS AI sebagai core engine mengkoordinasi 6+ agent untuk eksekusi paralel.</p>
-                    </div>
-                    <div class="step glass-card">
-                        <div class="step-num">03</div>
-                        <div class="step-icon">⚡</div>
-                        <h4>Instant Execution</h4>
-                        <p>Task dieksekusi real-time. Coding, research, deployment - semua otomatis.</p>
-                    </div>
-                    <div class="step glass-card">
-                        <div class="step-num">04</div>
-                        <div class="step-icon">🎯</div>
-                        <h4>Result Delivery</h4>
-                        <p>Hasil dikirim langsung via Telegram, WhatsApp, atau platform lainnya.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section section-alt" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
-                <h2 class="section-title">Hubungi <span class="gradient-text">Kami</span></h2>
-                <p class="section-desc">Punya project? Butuh bantuan AI? Langsung hubungi kami!</p>
-            </div>
-            <div class="contact-layout">
-                <div class="contact-cards">
-                    <a href="https://wa.me/6282125955744" target="_blank" class="c-card glass-card whatsapp-card">
-                        <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
-                        <div class="c-info"><h4>WhatsApp</h4><p>+62 821-2595-5744</p></div>
-                        <i class="fas fa-arrow-right c-arrow"></i>
-                    </a>
-                    <a href="https://t.me/" target="_blank" class="c-card glass-card telegram-card">
-                        <div class="c-icon"><i class="fab fa-telegram-plane"></i></div>
-                        <div class="c-info"><h4>Telegram</h4><p>@hermes_agent</p></div>
-                        <i class="fas fa-arrow-right c-arrow"></i>
-                    </a>
-                    <a href="https://instagram.com/rikotriono" target="_blank" class="c-card glass-card instagram-card">
-                        <div class="c-icon"><i class="fab fa-instagram"></i></div>
-                        <div class="c-info"><h4>Instagram</h4><p>Follow untuk update</p></div>
-                        <i class="fas fa-arrow-right c-arrow"></i>
-                    </a>
-                    <a href="https://tiktok.com/@r_varsceux" target="_blank" class="c-card glass-card tiktok-card">
-                        <div class="c-icon"><i class="fab fa-tiktok"></i></div>
-                        <div class="c-info"><h4>TikTok</h4><p>Konten AI & Tech</p></div>
-                        <i class="fas fa-arrow-right c-arrow"></i>
-                    </a>
-                </div>
-                <form class="contact-form glass-card" id="contactForm">
-                    <h3 class="form-title">Kirim Pesan</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Nama</label>
-                            <input type="text" name="name" placeholder="Nama kamu" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" name="email" placeholder="email@domain.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Layanan</label>
-                        <select name="service" required>
-                            <option value="">Pilih layanan...</option>
-                            <option>Web Development</option>
-                            <option>Android Development</option>
-                            <option>Automation & Bots</option>
-                            <option>AI Solutions</option>
-                            <option>Security & Testing</option>
-                            <option>DevOps & Infrastructure</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Pesan</label>
-                        <textarea name="message" rows="4" placeholder="Ceritakan project kamu..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i> Kirim Pesan
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">⚡ RIKO<span class="accent">AI</span></span>
-                    <p>Tim AI Agent yang siap membangun masa depan. Semua dari Android, semua dengan AI.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="#home">Home</a>
-                    <a href="#team">Tim</a>
-                    <a href="#services">Layanan</a>
-                    <a href="#android">Android AI</a>
-                    <a href="#contact">Kontak</a>
-                </div>
-                <div class="footer-sosmed">
-                    <h4>Social Media</h4>
-                    <div class="footer-socials">
-                        <a href="https://instagram.com/rikotriono" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/6282125955744" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://t.me/" target="_blank" class="social-btn telegram"><i class="fab fa-telegram-plane"></i></a>
-                        <a href="https://tiktok.com/@r_varsceux" target="_blank" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 RIKO AI Team. Built with ⚡ by AI Agents on Android.</p>
-            </div>
-        </div>
-    </footer>
-
-    <div class="toast" id="toast"></div>
-    <script src="js/main.js"></script>
-</body>
-</html>
+     1|<!DOCTYPE html>
+     2|<html lang="id">
+     3|<head>
+     4|    <meta charset="UTF-8">
+     5|    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     6|    <title>RIKO AI Team - We Build The Future With AI</title>
+     7|    <link rel="stylesheet" href="css/style.css">
+     8|    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+     9|    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    10|</head>
+    11|<body>
+    12|    <!-- PARTICLES -->
+    13|    <canvas id="particles"></canvas>
+    14|
+    15|    <!-- NAVBAR -->
+    16|    <nav class="navbar" id="navbar">
+    17|        <div class="nav-container">
+    18|            <a href="#" class="nav-logo">
+    19|                <div class="logo-glow"></div>
+    20|                <span class="logo-icon">⚡</span>
+    21|                <span class="logo-text">RIKO<span class="accent">AI</span></span>
+    22|            </a>
+    23|            <div class="nav-links" id="navLinks">
+    24|                <a href="#home" class="nav-link active">Home</a>
+    25|                <a href="#team" class="nav-link">Tim</a>
+    26|                <a href="#services" class="nav-link">Layanan</a>
+    27|                <a href="#android" class="nav-link">Android AI</a>
+    28|                <a href="#contact" class="nav-link">Kontak</a>
+    29|            </div>
+    30|            <button class="nav-toggle" id="navToggle">
+    31|                <span></span><span></span><span></span>
+    32|            </button>
+    33|        </div>
+    34|    </nav>
+    35|
+    36|    <!-- HERO -->
+    37|    <section class="hero" id="home">
+    38|        <div class="hero-glow-1"></div>
+    39|        <div class="hero-glow-2"></div>
+    40|        <div class="hero-content">
+    41|            <div class="hero-badge">
+    42|                <span class="badge-dot"></span>
+    43|                AI-Powered Development Team
+    44|            </div>
+    45|            <h1 class="hero-title">
+    46|                Kami Membangun<br>
+    47|                <span class="gradient-text">Apapun Yang<br>Kamu Butuhkan</span>
+    48|            </h1>
+    49|            <p class="hero-subtitle">
+    50|                Dipimpin oleh <strong>RIKO</strong>, dikelola oleh <strong>NEXUS AI</strong>, 
+    51|                dan dieksekusi oleh <strong>6 AI Agent</strong> spesialis. Semua berjalan 24/7, 
+    52|                langsung dari Android device.
+    53|            </p>
+    54|            <div class="hero-buttons">
+    55|                <a href="#services" class="btn btn-primary">
+    56|                    <i class="fas fa-rocket"></i> Lihat Layanan
+    57|                </a>
+    58|                <a href="#contact" class="btn btn-ghost">
+    59|                    <i class="fas fa-paper-plane"></i> Hubungi Kami
+    60|                </a>
+    61|            </div>
+    62|            <div class="hero-stats">
+    63|                <div class="stat-item">
+    64|                    <div class="stat-number" data-count="150" data-suffix="+">0</div>
+    65|                    <div class="stat-label">Project Selesai</div>
+    66|                </div>
+    67|                <div class="stat-item">
+    68|                    <div class="stat-number" data-count="6" data-suffix="">0</div>
+    69|                    <div class="stat-label">AI Agent Aktif</div>
+    70|                </div>
+    71|                <div class="stat-item">
+    72|                    <div class="stat-number" data-count="99" data-suffix="%">0</div>
+    73|                    <div class="stat-label">Uptime</div>
+    74|                </div>
+    75|                <div class="stat-item">
+    76|                    <div class="stat-number" data-count="50" data-suffix="+">0</div>
+    77|                    <div class="stat-label">Skills Dikuasai</div>
+    78|                </div>
+    79|            </div>
+    80|        </div>
+    81|        <div class="hero-visual">
+    82|            <div class="orbit-system">
+    83|                <div class="orbit orbit-1"><div class="orbit-dot">💻</div></div>
+    84|                <div class="orbit orbit-2"><div class="orbit-dot">🔍</div></div>
+    85|                <div class="orbit orbit-3"><div class="orbit-dot">⚙️</div></div>
+    86|                <div class="orbit orbit-4"><div class="orbit-dot">🎨</div></div>
+    87|                <div class="orbit orbit-5"><div class="orbit-dot">📱</div></div>
+    88|                <div class="orbit orbit-6"><div class="orbit-dot">🛡️</div></div>
+    89|                <div class="orbit-center">🤖</div>
+    90|            </div>
+    91|        </div>
+    92|    </section>
+    93|
+    94|    <!-- TEAM -->
+    95|    <section class="section" id="team">
+    96|        <div class="container">
+    97|            <div class="section-header">
+    98|                <span class="section-tag"><i class="fas fa-users"></i> Meet The Team</span>
+    99|                <h2 class="section-title">Struktur <span class="gradient-text">Tim Kami</span></h2>
+   100|                <p class="section-desc">Satu bos, satu AI manager, dan enam AI agent spesialis yang bekerja 24/7</p>
+   101|            </div>
+   102|
+   103|            <!-- BOSS CARD -->
+   104|            <div class="boss-section">
+   105|                <div class="boss-card glass-card">
+   106|                    <div class="boss-crown">👑</div>
+   107|                    <div class="boss-info">
+   108|                        <h2 class="boss-name">RIKO</h2>
+   109|                        <span class="boss-role">Founder & Visioner</span>
+   110|                        <p class="boss-desc">Otak di balik semua operasi. Android developer, modder, dan strategist yang punya visi dan mengarahkan seluruh tim AI untuk eksekusi nyata.</p>
+   111|                        <div class="boss-skills">
+   112|                            <span class="tag">Android Dev</span>
+   113|                            <span class="tag">Game Modding</span>
+   114|                            <span class="tag">Reverse Engineering</span>
+   115|                            <span class="tag">System Architecture</span>
+   116|                            <span class="tag">Strategy</span>
+   117|                        </div>
+   118|                        <div class="boss-socials">
+   119|                            <a href="https://instagram.com/rikotriono" target="_blank" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+   120|                            <a href="https://wa.me/6282125955744" target="_blank" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+   121|                            <a href="https://tiktok.com/@r_varsceux" target="_blank" class="social-btn tiktok"><i class="fab fa-tiktok"></i></a>
+   122|                        </div>
+   123|                    </div>
+   124|                </div>
+   125|            </div>
+   126|
+   127|            <div class="tree-connector">
+   128|                <div class="tree-line"></div>
+   129|                <span class="tree-label">manages & directs</span>
+   130|            </div>
+   131|
+   132|            <!-- MANAGER CARD -->
+   133|            <div class="manager-section">
+   134|                <div class="manager-card glass-card">
+   135|                    <div class="manager-avatar">🤖</div>
+   136|                    <div class="manager-info">
+   137|                        <h3 class="manager-name">NEXUS AI</h3>
+   138|                        <span class="manager-role">AI Core & Orchestrator</span>
+   139|                        <p class="manager-desc">AI core engine yang mengkoordinasi semua agent. Otak operasional 24/7 nonstop.</p>
+   140|                        <div class="caps-grid">
+   141|                            <div class="cap-pill"><i class="fas fa-sitemap"></i> Orchestrasi multi-agent</div>
+   142|                            <div class="cap-pill"><i class="fas fa-code"></i> Full-stack development</div>
+   143|                            <div class="cap-pill"><i class="fas fa-bug"></i> Debugging & problem solving</div>
+   144|                            <div class="cap-pill"><i class="fas fa-search"></i> Research & analisis</div>
+   145|                            <div class="cap-pill"><i class="fas fa-robot"></i> Automasi workflow</div>
+   146|                            <div class="cap-pill"><i class="fas fa-database"></i> File & system management</div>
+   147|                            <div class="cap-pill"><i class="fas fa-globe"></i> Web scraping & data</div>
+   148|                            <div class="cap-pill"><i class="fas fa-plug"></i> API development</div>
+   149|                        </div>
+   150|                    </div>
+   151|                </div>
+   152|            </div>
+   153|
+   154|            <div class="tree-connector">
+   155|                <div class="tree-line"></div>
+   156|                <span class="tree-label">delegates to 6 specialist agents</span>
+   157|            </div>
+   158|
+   159|            <!-- AGENTS GRID -->
+   160|            <div class="agents-grid">
+   161|                
+   162|                <div class="agent-card glass-card">
+   163|                    <div class="agent-icon">💻</div>
+   164|                    <h3 class="agent-name">Code Agent</h3>
+   165|                    <span class="agent-role">Software Developer</span>
+   166|                    <p class="agent-desc">Spesialis coding. Bisa buat app, website, API, bot dari nol.</p>
+   167|                    <div class="agent-tags">
+   168|                        
+   169|                        <span class="tag-sm">Python</span>
+   170|                        
+   171|                        <span class="tag-sm">JavaScript</span>
+   172|                        
+   173|                        <span class="tag-sm">Flask</span>
+   174|                        
+   175|                        <span class="tag-sm">React</span>
+   176|                        
+   177|                        <span class="tag-sm">Android</span>
+   178|                        
+   179|                        <span class="tag-sm">REST API</span>
+   180|                        
+   181|                    </div>
+   182|                </div>
+   183|                
+   184|                <div class="agent-card glass-card">
+   185|                    <div class="agent-icon">🔍</div>
+   186|                    <h3 class="agent-name">Research Agent</h3>
+   187|                    <span class="agent-role">Data &amp; Research Specialist</span>
+   188|                    <p class="agent-desc">Ahli riset dan analisis data. Scrape web, analisis market, buat report.</p>
+   189|                    <div class="agent-tags">
+   190|                        
+   191|                        <span class="tag-sm">Web Scraping</span>
+   192|                        
+   193|                        <span class="tag-sm">Data Analysis</span>
+   194|                        
+   195|                        <span class="tag-sm">Market Research</span>
+   196|                        
+   197|                        <span class="tag-sm">Report Generation</span>
+   198|                        
+   199|                    </div>
+   200|                </div>
+   201|                
+   202|                <div class="agent-card glass-card">
+   203|                    <div class="agent-icon">⚙️</div>
+   204|                    <h3 class="agent-name">DevOps Agent</h3>
+   205|                    <span class="agent-role">Infrastructure &amp; Automation</span>
+   206|                    <p class="agent-desc">Handle server, deployment, monitoring, automasi 24/7 nonstop.</p>
+   207|                    <div class="agent-tags">
+   208|                        
+   209|                        <span class="tag-sm">Server Management</span>
+   210|                        
+   211|                        <span class="tag-sm">Docker</span>
+   212|                        
+   213|                        <span class="tag-sm">CI/CD</span>
+   214|                        
+   215|                        <span class="tag-sm">Monitoring</span>
+   216|                        
+   217|                        <span class="tag-sm">Cron Jobs</span>
+   218|                        
+   219|                    </div>
+   220|                </div>
+   221|                
+   222|                <div class="agent-card glass-card">
+   223|                    <div class="agent-icon">🎨</div>
+   224|                    <h3 class="agent-name">Creative Agent</h3>
+   225|                    <span class="agent-role">Content &amp; Design</span>
+   226|                    <p class="agent-desc">Bikin konten kreatif, design, video, audio, copywriting.</p>
+   227|                    <div class="agent-tags">
+   228|                        
+   229|                        <span class="tag-sm">Image Generation</span>
+   230|                        
+   231|                        <span class="tag-sm">Video Editing</span>
+   232|                        
+   233|                        <span class="tag-sm">Content Writing</span>
+   234|                        
+   235|                        <span class="tag-sm">UI/UX Design</span>
+   236|                        
+   237|                    </div>
+   238|                </div>
+   239|                
+   240|                <div class="agent-card glass-card">
+   241|                    <div class="agent-icon">📱</div>
+   242|                    <h3 class="agent-name">Android Agent</h3>
+   243|                    <span class="agent-role">Mobile &amp; Reverse Engineering</span>
+   244|                    <p class="agent-desc">Spesialis Android - development sampai reverse engineering expert.</p>
+   245|                    <div class="agent-tags">
+   246|                        
+   247|                        <span class="tag-sm">APK Analysis</span>
+   248|                        
+   249|                        <span class="tag-sm">Reverse Engineering</span>
+   250|                        
+   251|                        <span class="tag-sm">Game Modding</span>
+   252|                        
+   253|                        <span class="tag-sm">Frida</span>
+   254|                        
+   255|                        <span class="tag-sm">Root Tools</span>
+   256|                        
+   257|                    </div>
+   258|                </div>
+   259|                
+   260|                <div class="agent-card glass-card">
+   261|                    <div class="agent-icon">🛡️</div>
+   262|                    <h3 class="agent-name">Security Agent</h3>
+   263|                    <span class="agent-role">Security &amp; Penetration Testing</span>
+   264|                    <p class="agent-desc">Handle security scanning, vulnerability assessment, hardening.</p>
+   265|                    <div class="agent-tags">
+   266|                        
+   267|                        <span class="tag-sm">Security Audit</span>
+   268|                        
+   269|                        <span class="tag-sm">Vulnerability Scan</span>
+   270|                        
+   271|                        <span class="tag-sm">Penetration Testing</span>
+   272|                        
+   273|                        <span class="tag-sm">Hardening</span>
+   274|                        
+   275|                    </div>
+   276|                </div>
+   277|                
+   278|            </div>
+   279|        </div>
+   280|    </section>
+   281|
+   282|    <!-- SERVICES -->
+   283|    <section class="section section-alt" id="services">
+   284|        <div class="container">
+   285|            <div class="section-header">
+   286|                <span class="section-tag"><i class="fas fa-bolt"></i> Our Services</span>
+   287|                <h2 class="section-title">Apa Yang <span class="gradient-text">Bisa Kami Buat</span></h2>
+   288|                <p class="section-desc">Dengan kekuatan AI agent, hampir tidak ada yang tidak bisa kami lakukan</p>
+   289|            </div>
+   290|            <div class="services-grid">
+   291|                
+   292|                <div class="service-card glass-card">
+   293|                    <div class="svc-icon">🌐</div>
+   294|                    <h3 class="svc-title">Web Development</h3>
+   295|                    <p class="svc-desc">Full-stack website dari landing page sampai web app kompleks.</p>
+   296|                    <ul class="svc-features">
+   297|                        
+   298|                        <li><i class="fas fa-check"></i> Landing Page</li>
+   299|                        
+   300|                        <li><i class="fas fa-check"></i> E-Commerce</li>
+   301|                        
+   302|                        <li><i class="fas fa-check"></i> Dashboard</li>
+   303|                        
+   304|                        <li><i class="fas fa-check"></i> API Backend</li>
+   305|                        
+   306|                        <li><i class="fas fa-check"></i> Real-time App</li>
+   307|                        
+   308|                    </ul>
+   309|                </div>
+   310|                
+   311|                <div class="service-card glass-card">
+   312|                    <div class="svc-icon">📱</div>
+   313|                    <h3 class="svc-title">Android Development</h3>
+   314|                    <p class="svc-desc">Build, mod, dan analyze aplikasi Android dari nol.</p>
+   315|                    <ul class="svc-features">
+   316|                        
+   317|                        <li><i class="fas fa-check"></i> App Development</li>
+   318|                        
+   319|                        <li><i class="fas fa-check"></i> APK Modding</li>
+   320|                        
+   321|                        <li><i class="fas fa-check"></i> Reverse Engineering</li>
+   322|                        
+   323|                        <li><i class="fas fa-check"></i> Game Mod Menu</li>
+   324|                        
+   325|                        <li><i class="fas fa-check"></i> Root Tools</li>
+   326|                        
+   327|                    </ul>
+   328|                </div>
+   329|                
+   330|                <div class="service-card glass-card">
+   331|                    <div class="svc-icon">🤖</div>
+   332|                    <h3 class="svc-title">Automation &amp; Bots</h3>
+   333|                    <p class="svc-desc">Bot Telegram, Discord, WhatsApp, scheduler, scraper otomatis.</p>
+   334|                    <ul class="svc-features">
+   335|                        
+   336|                        <li><i class="fas fa-check"></i> Telegram Bot</li>
+   337|                        
+   338|                        <li><i class="fas fa-check"></i> Discord Bot</li>
+   339|                        
+   340|                        <li><i class="fas fa-check"></i> Web Scraper</li>
+   341|                        
+   342|                        <li><i class="fas fa-check"></i> Task Scheduler</li>
+   343|                        
+   344|                        <li><i class="fas fa-check"></i> Workflow Auto</li>
+   345|                        
+   346|                    </ul>
+   347|                </div>
+   348|                
+   349|                <div class="service-card glass-card">
+   350|                    <div class="svc-icon">🧠</div>
+   351|                    <h3 class="svc-title">AI Solutions</h3>
+   352|                    <p class="svc-desc">Chatbot, AI-powered analytics, content generation dengan AI.</p>
+   353|                    <ul class="svc-features">
+   354|                        
+   355|                        <li><i class="fas fa-check"></i> AI Chatbot</li>
+   356|                        
+   357|                        <li><i class="fas fa-check"></i> Content Generation</li>
+   358|                        
+   359|                        <li><i class="fas fa-check"></i> Data Analytics</li>
+   360|                        
+   361|                        <li><i class="fas fa-check"></i> Image Generation</li>
+   362|                        
+   363|                        <li><i class="fas fa-check"></i> Text Analysis</li>
+   364|                        
+   365|                    </ul>
+   366|                </div>
+   367|                
+   368|                <div class="service-card glass-card">
+   369|                    <div class="svc-icon">🔒</div>
+   370|                    <h3 class="svc-title">Security &amp; Testing</h3>
+   371|                    <p class="svc-desc">Keamanan aplikasi dan infrastruktur, scanning dan hardening.</p>
+   372|                    <ul class="svc-features">
+   373|                        
+   374|                        <li><i class="fas fa-check"></i> Security Audit</li>
+   375|                        
+   376|                        <li><i class="fas fa-check"></i> Penetration Testing</li>
+   377|                        
+   378|                        <li><i class="fas fa-check"></i> Vulnerability Scan</li>
+   379|                        
+   380|                        <li><i class="fas fa-check"></i> Hardening</li>
+   381|                        
+   382|                        <li><i class="fas fa-check"></i> Monitoring</li>
+   383|                        
+   384|                    </ul>
+   385|                </div>
+   386|                
+   387|                <div class="service-card glass-card">
+   388|                    <div class="svc-icon">☁️</div>
+   389|                    <h3 class="svc-title">DevOps &amp; Infrastructure</h3>
+   390|                    <p class="svc-desc">Setup server, deployment, monitoring, infra cloud 24/7.</p>
+   391|                    <ul class="svc-features">
+   392|                        
+   393|                        <li><i class="fas fa-check"></i> Server Setup</li>
+   394|                        
+   395|                        <li><i class="fas fa-check"></i> Docker Deployment</li>
+   396|                        
+   397|                        <li><i class="fas fa-check"></i> CI/CD Pipeline</li>
+   398|                        
+   399|                        <li><i class="fas fa-check"></i> Monitoring</li>
+   400|                        
+   401|                        <li><i class="fas fa-check"></i> Auto-scaling</li>
+   402|                        
+   403|                    </ul>
+   404|                </div>
+   405|                
+   406|            </div>
+   407|        </div>
+   408|    </section>
+   409|
+   410|    <!-- ANDROID AI -->
+   411|    <section class="section" id="android">
+   412|        <div class="container">
+   413|            <div class="section-header">
+   414|                <span class="section-tag"><i class="fab fa-android"></i> Android + AI</span>
+   415|                <h2 class="section-title">Semua Bisa Dilakukan<br><span class="gradient-text">Hanya Dari Android</span></h2>
+   416|                <p class="section-desc">Tidak perlu PC atau server mahal. Semua operasi AI agent berjalan langsung di Android device dengan root access</p>
+   417|            </div>
+   418|
+   419|            <div class="android-layout">
+   420|                <div class="phone-mockup">
+   421|                    <div class="phone-body">
+   422|                        <div class="phone-notch"></div>
+   423|                        <div class="phone-screen">
+   424|                            <div class="ph-bar">
+   425|                                <span>24/7</span>
+   426|                                <span class="ph-status"><span class="live-dot"></span> AI Active</span>
+   427|                            </div>
+   428|                            <div class="ph-terminal">
+   429|                                <div class="ph-line"><span class="ph-prompt">$</span> <span class="ph-cmd">hermes "build web app"</span></div>
+   430|                                <div class="ph-line"><span class="ph-prompt">$</span> <span class="ph-cmd">agent --delegate all</span></div>
+   431|                                <div class="ph-out"><i class="fas fa-check-circle"></i> Deployed to production!</div>
+   432|                                <div class="ph-line"><span class="ph-prompt">$</span> <span class="ph-cursor">_</span></div>
+   433|                            </div>
+   434|                        </div>
+   435|                    </div>
+   436|                </div>
+   437|
+   438|                <div class="caps-layout">
+   439|                    
+   440|                    <div class="cap-card glass-card">
+   441|                        <h4 class="cap-title">📱 App Development</h4>
+   442|                        <ul class="cap-list">
+   443|                            
+   444|                            <li><i class="fas fa-angle-right"></i> Build Android app dari nol (Java/Kotlin/Flutter)</li>
+   445|                            
+   446|                            <li><i class="fas fa-angle-right"></i> Buat mod menu untuk game Android</li>
+   447|                            
+   448|                            <li><i class="fas fa-angle-right"></i> Develop tool/utility app</li>
+   449|                            
+   450|                            <li><i class="fas fa-angle-right"></i> Create automation apps</li>
+   451|                            
+   452|                            <li><i class="fas fa-angle-right"></i> Build system-level apps dengan root access</li>
+   453|                            
+   454|                        </ul>
+   455|                    </div>
+   456|                    
+   457|                    <div class="cap-card glass-card">
+   458|                        <h4 class="cap-title">🔧 Reverse Engineering</h4>
+   459|                        <ul class="cap-list">
+   460|                            
+   461|                            <li><i class="fas fa-angle-right"></i> Analisis APK (decompile, inspect, patch)</li>
+   462|                            
+   463|                            <li><i class="fas fa-angle-right"></i> Bypass protections (IJM, Pairip, Fancy Security)</li>
+   464|                            
+   465|                            <li><i class="fas fa-angle-right"></i> Extract dan modifikasi libil2cpp.so</li>
+   466|                            
+   467|                            <li><i class="fas fa-angle-right"></i> Runtime analysis dengan Frida</li>
+   468|                            
+   469|                            <li><i class="fas fa-angle-right"></i> String decryption dan memory dumping</li>
+   470|                            
+   471|                        </ul>
+   472|                    </div>
+   473|                    
+   474|                    <div class="cap-card glass-card">
+   475|                        <h4 class="cap-title">🎮 Game Modding</h4>
+   476|                        <ul class="cap-list">
+   477|                            
+   478|                            <li><i class="fas fa-angle-right"></i> External ESP overlay (MLBB, PUBG, dll)</li>
+   479|                            
+   480|                            <li><i class="fas fa-angle-right"></i> Memory read/write untuk game values</li>
+   481|                            
+   482|                            <li><i class="fas fa-angle-right"></i> Offset finding dan updating</li>
+   483|                            
+   484|                            <li><i class="fas fa-angle-right"></i> Build injector dan mod menu APK</li>
+   485|                            
+   486|                            <li><i class="fas fa-angle-right"></i> Anti-cheat bypass research</li>
+   487|                            
+   488|                        </ul>
+   489|                    </div>
+   490|                    
+   491|                    <div class="cap-card glass-card">
+   492|                        <h4 class="cap-title">⚙️ Root Automation</h4>
+   493|                        <ul class="cap-list">
+   494|                            
+   495|                            <li><i class="fas fa-angle-right"></i> KernelSU module development</li>
+   496|                            
+   497|                            <li><i class="fas fa-angle-right"></i> Automated root command execution</li>
+   498|                            
+   499|                            <li><i class="fas fa-angle-right"></i> System-level file management</li>
+   500|                            
+   501|
