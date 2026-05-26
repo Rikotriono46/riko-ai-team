@@ -126,24 +126,18 @@ document.addEventListener('DOMContentLoaded', () => {
         counters.forEach(c => obs.observe(c));
     }
 
-    // ===== CONTACT FORM =====
+    // ===== CONTACT FORM → WhatsApp =====
     const form = document.getElementById('contactForm');
     if (form) {
-        form.addEventListener('submit', async e => {
+        form.addEventListener('submit', e => {
             e.preventDefault();
             const data = Object.fromEntries(new FormData(form));
-            try {
-                const res = await fetch('/api/contact', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
-                });
-                const result = await res.json();
-                showToast(result.message || 'Pesan terkirim!');
-                form.reset();
-            } catch {
-                showToast('Gagal mengirim. Coba lagi!');
-            }
+            const waNumber = '6282125955744';
+            const msg = `Halo RIKO AI Team! 👋\n\n*Nama:* ${data.name}\n*Email:* ${data.email}\n*Layanan:* ${data.service}\n\n*Pesan:*\n${data.message}`;
+            const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+            window.open(waUrl, '_blank');
+            showToast('Redirect ke WhatsApp...');
+            form.reset();
         });
     }
 
